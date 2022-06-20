@@ -42,6 +42,14 @@ body {
 
 }
 
+.container-cartas:active {
+    transform: scale(0.97);
+}
+
+.container-cartas.girar{
+    transform: rotateY(180dg);
+}
+
 .frente-carta,
 .fundo-carta {
     width: 100px;
@@ -49,7 +57,8 @@ body {
     margin-top: 25px;
     margin-left: 8px;
 }
-.ocultar{
+
+.ocultar {
     display: none;
 }
 
