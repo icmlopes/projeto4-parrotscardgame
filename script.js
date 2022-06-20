@@ -13,9 +13,9 @@ function iniciarJogo() {
 
 for (let i = 0; i < numCartas; i++) {
   baralho.innerHTML += `
-    <div class="container-cartas">
-      <img src= "imagens/${cartasDisponiveis[i]}" class="ocultar img-cartas">
-      <img src= "imagens/front.png" class="img-cartas">
+    <div class="container-cartas" onclick="girarCarta(this)">
+      <img src= "imagens/${cartasDisponiveis[i]}" class="fundo-carta ocultar">
+      <img src= "imagens/front.png" class="frente-carta">
     </div>
 `
 };
@@ -24,8 +24,9 @@ function sortearCartas() {
   for (let i = 0; i < numCartas; i++) {
     cartasDisponiveis.push(arrayGif[i]);
   }
-}
+};
 
+// baralho.innerHTML = baralho + baralho; - Ta errado
 arrayGif.sort(comparador); // Após esta linha, a minhaArray estará embaralhada
 
 
@@ -34,8 +35,16 @@ function comparador() {
   return Math.random() - 0.5;
 }
 
+
+function girarCarta(elemento) {
+  elemento.querySelector(".frente-carta").classList.add("ocultar");
+  elemento.querySelector(".fundo-carta").classList.remove("ocultar")
+};
+
 function enredoJogo() {
   iniciarJogo();
   sortearCartas();
+  comparador();
+
 
 }

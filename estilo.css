@@ -42,7 +42,8 @@ body {
 
 }
 
-.img-cartas {
+.frente-carta,
+.fundo-carta {
     width: 100px;
     height: 100px;
     margin-top: 25px;
