@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef9bf;
+
+}
+
+.topo {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 56px;
+    color: #75B79E;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.espacamento {
+    height: 20px;
+}
+
+.jogo {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-cartas {
+    width: 117px;
+    height: 146px;
+    background-color: #a7e9af;
+    border: 1px solid #99cea8;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.papagaio {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 8px;
+}
+
+@media (max-width: 767px) {
+    .jogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-cartas {
+        margin-right: 0;
+    }
+
+
+}
