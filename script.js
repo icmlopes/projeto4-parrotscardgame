@@ -1,5 +1,5 @@
 let arrayGif = ['bobrossparrot.gif', 'explodyparrot.gif', 'fiestaparrot.gif', 'metalparrot.gif', 'revertitparrot.gif', 'tripletsparrot.gif', 'unicornparrot.gif']
-let numCartas = 10;
+let numCartas;
 let baralho = document.querySelector(".jogo");
 let cartasDisponiveis = [];
 let cartasViradas = [];
@@ -7,12 +7,12 @@ let cartaSelecionada = [];
 let numClique = 0;
 let maxClique = 2;
 
-/* function iniciarJogo() {
+function iniciarJogo() {
   while (numCartas % 2 !== 0 || numCartas < 4 || numCartas > 14) {
     numCartas = Number(prompt("Com quantas cartas você quer jogar? Escolha um nº par entre 4 e 14"));
   }
-}; */
-/* iniciarJogo(); */
+};
+iniciarJogo();
 
 
 function sortearCartas() {
