@@ -1,10 +1,11 @@
+let arrayGif = ['bobrossparrot.gif', 'explodyparrot.gif', 'fiestaparrot.gif', 'metalparrot.gif', 'revertitparrot.gif', 'tripletsparrot.gif', 'unicornparrot.gif']
+let numCartas;
 
-function iniciarJogo(){
-  let numCartas = parseInt(prompt("Com quantas cartas você quer jogar? Escolha um nº par entre 4 e 14"))
-  const numPar = numCartas % 2;
-  while (numPar !== 0 || numCartas < 4 || numCartas > 14) {
-    numCartas = parseInt(prompt("Com quantas cartas você quer jogar? Escolha um nº par entre 4 e 14"));
-console.log(numCartas)
+
+
+function iniciarJogo() {
+  while (numCartas % 2 !== 0 || numCartas < 4 || numCartas > 14) {
+    numCartas = Number(prompt("Com quantas cartas você quer jogar? Escolha um nº par entre 4 e 14"));
   }
 }
 iniciarJogo()
@@ -20,7 +21,6 @@ iniciarJogo()
 //}
 
 
-//let arrayGif = ['bobrossparrot.gif', 'explodyparrot.gif', 'fiestaparrot.gif', 'metalparrot.gif', 'revertitparrot.gif', 'tripletsparrot.gif', 'unicornparrot.gif']
 
 
 //arrayGif.sort(comparador); // Após esta linha, a minhaArray estará embaralhada
@@ -28,7 +28,7 @@ iniciarJogo()
 
 // Esta função pode ficar separada do código acima, onde você preferir
 //function comparador() {
-  //  return Math.random() - 0.5;
+//  return Math.random() - 0.5;
 //}  
 
 // colocar que é para gerar a quantidade de cartas colocadas?
